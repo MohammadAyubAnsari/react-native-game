@@ -1,7 +1,16 @@
-import { Text } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
 function GameOverScreen() {
-  return <Text>Game is over!</Text>;
+  return <Text style={styles.style}>Game is over!</Text>;
 }
 
 export default GameOverScreen;
+
+const styles = StyleSheet.create({
+  style: {
+    marginTop: 400,
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+});

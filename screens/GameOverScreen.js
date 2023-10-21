@@ -5,6 +5,7 @@ import {
   Text,
   useWindowDimensions,
   ScrollView,
+  Platform,
 } from "react-native";
 import Title from "../components/ui/Title";
 import Colors from "../constatnts/colors";
@@ -56,6 +57,7 @@ export default GameOverScreen;
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
+    marginTop: Platform.select({ ios: 0, android: 20 }),
   },
   rootContainer: {
     flex: 1,
